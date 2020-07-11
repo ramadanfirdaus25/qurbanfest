@@ -1,0 +1,353 @@
+/* Navbar */
+/* .navbar {
+    position: relative;
+    z-index: 1;
+} */
+
+nav.bg-dark {
+    transition: .5s;
+    background: rgb(0, 0, 0) !important;
+}
+
+nav.bg-dark.scroll{
+    background: rgb(0, 0, 0) !important;
+}
+
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 30px;
+}
+
+.navbar-brand span {
+    color: #00ff00;
+}
+
+
+
+/* utility */
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+section {
+    min-height: 420px;
+    scroll-snap-align: start;
+}
+
+header {
+    position: relative;
+}
+
+/* .imgUkur {
+    height: 120px;
+    width: 90px;
+    text-align: center;
+
+} */
+
+/* .sticky-top {
+    position: sticky;
+} */
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(assets/img/bg1.jpg);
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    height: 540px;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* .navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+} */
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 70px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.jumbotron h1 {
+    font-size: 30px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 100px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* info panel */
+.info-panel {
+   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+   border-radius: 15px;
+   margin-top: -100px;
+   background-color: white;
+   padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    font-weight: 500;
+
+}
+
+/* Tentang */
+.tentang {
+    margin-top: -25px;
+    padding-top: 70px;
+    text-align: justify;
+}
+
+.tentang p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+    margin: 30px 0 0;
+}
+
+.tentang h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tentang p span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.tentang h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.img-kontak {
+    background-image: url(assets/img/two-white-sheep-on-grass-field-1092201.jpg);
+    background-size: cover;
+}
+
+
+/* SAPI */
+.sapi, .domba {
+    padding-top: 50px;
+}
+
+.sapi h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.domba h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.testimonial figure img {
+    width: 60px;
+    margin: 20px 15px 6px;
+    opacity: 0.6;
+
+}
+
+.testimonial figure img.utama {
+    width: 90px;
+   opacity: 1;
+    margin-top: 5px;
+}
+.testimonial figure h5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(131, 129, 129);
+}
+
+.testimonial figure p {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    font-style: normal;
+    color: rgb(138, 138, 138);
+    margin-top: -5px;
+}
+
+
+.footer p {
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dokumentasi {
+    padding-top: 120px;
+}
+
+
+
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+
+    nav.bg-dark {
+        transition: .5s;
+        background: transparent !important;
+    }
+    
+    nav.bg-dark.scroll{
+        background: rgb(0, 0, 0) !important;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid green;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .navbar-brand {
+        font-size: 32px;
+    }
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 64px;
+        margin-top: 150px;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+    
+    .jumbotron p {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+
+    /* Tentang Kami */
+    .tentang {
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .tentang h1 {
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .tentang p span {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    .tentang p {
+        font-size: 18px;
+        color: #3b3b3b;
+        font-weight: 500;
+        margin: 30px 0 0;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .dokumentasi {
+        padding-top: 120px;
+    }
+
+
+    .testimonial h5 {
+        font-size: 30px;
+    }
+}
